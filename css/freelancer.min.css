@@ -1,0 +1,2934 @@
+/*!
+ * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../Helvetica/Helvetica.ttf');
+}
+
+body {
+  font-family:
+    /*Lato,'Helvetica Neue',Helvetica,*/
+    Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  ;
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+   overflow-x :  hidden;
+}
+
+p {
+  font-size: 20px
+}
+
+p.small {
+  font-size: 16px
+}
+
+a, a.active, a:active, a:focus, a:hover {
+  color: #001a33
+    /*portfio word color*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:
+    /*Montserrat,"Helvetica Neue",Helvetica,*/
+    Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*text-transform:uppercase;*/
+  font-weight: 200;
+}
+
+hr.star-light, hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px
+}
+
+hr.star-light:after, hr.star-primary:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  font-size: 2em;
+  padding: 0 .25em
+}
+
+hr.star-light {
+  border-color: #2C3E50
+}
+
+hr.star-light:after {
+  background-color: #18BC9C;
+  color: #2C3E50
+}
+
+hr.star-primary {
+  border-color: #2C3E50
+}
+
+hr.star-primary:after {
+  background-color: #fff;
+  color: #2C3E50
+}
+
+.img-centered {
+  margin: 0 auto
+}
+
+header {
+  text-align: center;
+  background: #fff
+    /*(commit background color)*/
+  ;
+  color: #2C3E50
+
+}
+
+header .container {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #000000;
+  width: auto;
+  /*extend black layout to cover whole screen*/
+  background: rgb(76, 76, 76);
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 0%, rgba(17, 17, 17, 1) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(76, 76, 76, 1)), color-stop(0%, rgba(89, 89, 89, 1)), color-stop(100%, rgba(17, 17, 17, 1)));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 0%, rgba(17, 17, 17, 1) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 0%, rgba(17, 17, 17, 1) 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 0%, rgba(17, 17, 17, 1) 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 0%, rgba(17, 17, 17, 1) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#111111', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  background: -webkit-linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+  background: -moz-linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+  background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+  background: #cc2b5e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FC5C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #3494E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FEAC5E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #C779D0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4BC0C8, #C779D0);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4BC0C8, #C779D0);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #232526;
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(to bottom, #414345, #232526);
+  background: radial-gradient(#999, #000);
+  background-image: radial-gradient(circle 100px, #414345, #232526);
+  background-image: radial-gradient(circle 150px, #545557, #232526);
+  background: #000000;
+  #ffffff;
+  #C0C0C0;
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(to bottom, #C0C0C0, #C0C0C0);
+  background: linear-gradient(to bottom, #C0C0C0, #000000);
+  background: linear-gradient(to bottom, #F4EAE6, #F4EAE6);
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  background: #232526;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(to bottom, #232526, #232526);
+  background: #ffffff;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*
+background: radial-gradient(#999, #000);
+background-image: radial-gradient(circle 100px, #414345, #232526);
+background-image: radial-gradient(circle 150px, #545557, #232526);
+*/
+}
+
+/*검정색 #57595D*/
+header .container_cor {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #F2F4F4;
+  width: auto;
+}
+
+header .container_cor_w {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  width: auto;
+}
+
+header-top .container {
+  width: auto;
+  /*extend black layout to cover whole screen*/
+  height: auto;
+  padding: auto;
+  margin: 1px;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 20px
+}
+
+.image95 {
+  height: auto;
+  max-width: 95%;
+}
+
+header .intro-text {
+  /* To prevent the text, our future..., to extend too widely*/
+  margin: auto;
+  max-width: 1200px;
+  /*our future*/
+}
+
+/* Header1*****************************************************/
+header .container {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background-color: #000000;
+}
+
+header .intro-text {
+  /* To prevent the text, our future..., to extend too widely*/
+  margin: auto;
+  max-width: 800px;  /*title range*/
+
+}
+
+header .intro-text .motto_short {
+  font-size: 3.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #ffffff;
+  color: #993399;
+  color: #232526;
+  color: #ffffff;
+  /*Build Your Own Portfolio*/
+  line-height: 1.1em;
+
+    margin-top: -100px;
+
+
+}
+
+header .intro-text .motto_short12 {
+  font-size: 2.25em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #ffffff;
+  color: #993399;
+  color: #232526;
+  color: #ffffff;
+  /*Build Your Own Portfolio*/
+  line-height: 1.1em;
+
+}
+
+header .intro-text .motto {
+  display: none;
+
+
+}
+
+header .intro-text .motto12 {
+  display: none;
+}
+
+header .intro-text .motto12exp {
+  font-weight: 100;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+header .intro-text .motto1_1 {
+  font-size: 2.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #e90418;
+  /*Build Your Own Portfolio*/
+  line-height: 1.1em;
+}
+
+header .intro-text .motto2 {
+  font-size: 2.25em
+    /*our commit*/
+  ;
+  font-weight: 100;
+  /*color: #2C3E50*/
+  color: #ffffff;
+  /*Build Your Own Portfolio*/
+  line-height: 1.0em;
+}
+
+header .intro-text .motto_sub {
+  font-size: 3.0em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #ffffff;
+  /*Build Your Own Portfolio*/
+  line-height: 0.5em;
+}
+
+header .intro-text .motto_sub_2 {
+  font-size: 2.0em
+    /*our commit*/
+  ;
+  font-weight: 300;
+  /*color: #2C3E50*/
+  color: #ffffff;
+  /*Build Your Own Portfolio*/
+  line-height: 2.0em;
+}
+
+header .intro-text .motto_sub_3 {
+  font-size: 1.5em
+    /*our commit*/
+  ;
+  font-weight: 300;
+  /*color: #2C3E50*/
+  color: #ffffff;
+  /*Build Your Own Portfolio*/
+  line-height: 1.0em;
+    margin-top: -50px;
+        margin-bottom: -100px;
+}
+
+/* Header2*****************************************************/
+header .container_header2_sub {
+  background: radial-gradient(#e0e0e0, #e0e0e0);
+  color: rgba(0, 0, 0, 0);
+  font-size: 0.05px;
+}
+
+header .container_header2 {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: -30px;
+  /*background-color: #ffffff;*/
+  /*#F2F4F4;*/
+}
+
+header .container_header2 .spacing {
+  margin-top: 30px;
+}
+
+section.expected_returns .container_sec2 .spacing {
+  margin-top: 50px;
+}
+
+section.expected_returns .container_sec2 .line_page .spacing {
+  margin-top: 10px;
+}
+
+header.container_header2 .spacing {
+  margin-top: 1000px;
+}
+
+section.expected_returns .container_sec2 .line_page .spacing2 {
+  margin-top: 0px;
+}
+
+header .line_page {
+  background: #ffffff;
+  /*#ff006f;*/
+  color: #424242;
+  font-weight: 550;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.2em
+}
+
+header .line_page0 {
+  background: #ffffff;
+  /*#ff006f;*/
+  color: #ffffff;
+  font-weight: 550;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.2em
+}
+
+header .line_page .spacing {
+  margin-top: -5px;
+}
+
+header .container_header2 .element .spacing3 {
+  line-height: 1.0em;
+}
+
+header .line_page .line_page_sub1 {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #616161;
+}
+
+header .line_page .line_page_sub2 {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #ff006f;
+  color: #e90418;
+}
+
+header .header2_text {
+  font-size: 2.0em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+}
+
+header .header2_text_sub {
+  font-size: 2.0em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+}
+
+header .header2_text_sub2 {
+  font-size: 2.0em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+}
+
+/* SECTION1*****************************************************/
+section.expected_returns {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+section.expected_returns .sec1_color {
+  /*background-color: #ffffff*/
+}
+
+section.expected_returns .sec1_left {
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+}
+
+section.expected_returns .motto_sec1 {
+  font-size: 1.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*  color: #ffffff; */
+  text-align: left;
+  line-height: 1.1em;
+  margin-left: -20px;
+  margin-right: -20px;
+
+}
+
+
+section.expected_returns .figure img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+section.expected_returns .motto_sec2 {
+  font-size: 1.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  text-align: center;
+  line-height: 1.1em;
+}
+
+section.expected_returns .intro-text .motto_sec1 {
+  padding-top: 0px;
+  font-size: 1.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+  line-height: 1.5em;
+}
+
+section.expected_returns .intro-text .motto_sec1 .spacing {
+  line-height: 0.5em;
+}
+
+.spacing4 {
+  line-height: 0.5em;
+}
+
+.spacing5 {
+  margin-top: 5px;
+}
+
+section.expected_returns .intro-text .motto_sec1_sub1 {
+  font-size: 1.35em
+    /*our commit*/
+  ;
+  font-weight: 300;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+  line-height: 1.35em;
+}
+
+section.expected_returns .intro-text .motto_sec1_sub2 {
+  font-size: 1.2em
+    /*our commit*/
+  ;
+  font-weight: 300;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+  line-height: 1.5em;
+}
+
+section.expected_returns .intro-text .motto_sec1_sub3 {
+  font-size: 1.35em
+    /*our commit*/
+  ;
+  font-weight: 300;
+  /*color: #2C3E50*/
+  color: #616161;
+  /*Build Your Own Portfolio*/
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* SECTION2*****************************************************/
+section.expected_returns_sec2 {
+  padding-top: 75px;
+  padding-bottom: 0px;
+}
+
+section .container_sec2 {
+  margin-top: -30px;
+  text-align: center;
+}
+
+section.expected_returns .line_page {
+  background: #ffffff;
+  /*#ff006f;*/
+  color: #424242;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+header .line_page_sub1 {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+header .line_page_sub2 {
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #ff0000;
+}
+
+section.expected_returns .container_sec2_sub {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* SECTION3*****************************************************/
+section.expected_returns_sec3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+section .container_sec3 {
+  margin-top: -80px;
+}
+
+section .container_sec3_color {
+  /*background-color: #fafafa;*/
+  /*ETF color*/
+}
+
+section.expected_returns .sec3_left {
+  font-size: 1.25em;
+  /*color: #003458;*/
+  /*color: #303030;*/
+  color: #616161;
+  font-weight: 500;
+}
+
+section.expected_returns2 .sec3_left_sub_above {
+  font-size: 1.6em;
+  background: linear-gradient(110deg, #212121 60%, #616161 60%);
+  color: #ffffff;
+  font-weight: 300;
+  margin-top: -30px;
+}
+
+section.expected_returns2 .sec3_left_sub {
+  font-size: 1.25em
+    /*our commit*/
+  ;
+  font-weight: 300;
+  /*color: #2C3E50*/
+  /*color:	#505050;*/
+  /*Build Your Own Portfolio*/
+  color: #424242;
+  line-height: 1.8em;
+  margin: auto;
+  background: #f2f2f2;
+}
+
+section.expected_returns2 .sec3_right {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: -70px;
+}
+
+.modal-body {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.modal-body .sub {
+  text-align: left;
+  font-weight: 500;
+  font-size: 2.0em;
+  line-height: 1.5em;
+}
+
+.modal-body .bold {
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.0em;
+  line-height: 1.5em;
+}
+
+.modal-body .figcaption {
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+footer.text-center .intro-text .skills {
+  font-size: 0.7em;
+  color: #ffffff
+}
+
+footer.text-center .intro-text {
+  font-size: 1.5em;
+  color: #ffffff
+}
+
+/*
+@media (min-width:768px) and  (max-width:908px){
+  section.expected_returns .sec3_left_sub {
+    font-size: 1.8em;
+    font-weight: 50;
+    color: #ffffff;
+    line-height: 1.8em;
+  }
+}
+*/
+/*
+@media (min-width:628px) {
+  section.expected_returns .sec1_left {
+
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: -30px;
+  }
+
+
+
+
+
+  section.expected_returns .sec3_left_sub_above {
+    margin-top: 20px;
+  }
+  section.expected_returns .sec3_right {
+  margin-top: 20px;
+  }
+
+}
+*/
+@media (min-width:600px) {
+  header .intro-text .motto_short {
+    display: none;
+        margin-top: 200px;
+
+  }
+
+  header .intro-text .motto_short12 {
+    display: none;
+
+  }
+
+  header .intro-text .motto {
+    display: inline;
+    font-size: 5.5em
+      /*our commit*/
+    ;
+    font-weight: 600;
+    /*color: #2C3E50*/
+    color: #ffffff;
+    /*Build Your Own Portfolio*/
+    line-height: 1.1em;
+  }
+
+  header .intro-text .motto12 {
+    display: inline;
+    font-size: 2.5em
+      /*our commit*/
+    ;
+    font-weight: 600;
+    /*color: #2C3E50*/
+    color: #ffffff;
+    /*Build Your Own Portfolio*/
+    line-height: 1.1em;
+
+  }
+
+  header .intro-text .motto_sub_3 {
+
+      margin-top: 0px;
+          margin-bottom: 0px;
+  }
+
+  header .intro-text .motto12exp {
+    font-weight: 100;
+    font-size: 1.7em;
+    color: #ffffff;
+  }
+
+  section.expected_returns .container-fluid {
+    max-width: 600px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+
+
+
+}
+
+@media (min-width:768px) {
+
+  /*HEADER 1 ***************************************/
+  header .container {
+    /*
+  background: #FEAC5E;
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  */
+    /*
+  background: #232526;
+  background: -webkit-linear-gradient(to bottom, #414345, #232526);
+  background: linear-gradient(to bottom, #414345, #232526);
+  */
+  }
+
+  section.expected_returns .container-fluid {
+    max-width: 768px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
+
+  section .container_sec3 {
+    margin-bottom: 405px;
+  }
+
+  section .container_sec3_color {
+    background-color: #ffffff;
+  }
+
+  section.expected_returns .motto_sec1 {
+    /*display: none;*/
+    padding-top: 0px;
+    font-size: 1.75em
+      /*our commit*/
+    ;
+    font-weight: 600;
+    /*color: #2C3E50*/
+    color: #616161;
+    /*Build Your Own Portfolio*/
+    line-height: 1.1em;
+  }
+
+
+
+  header .intro-text .motto {
+    font-weight: 600;
+    font-size: 5.5em;
+  }
+
+  header .intro-text .motto12 {
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #ffffff;
+  }
+
+  header .intro-text .motto12exp {
+    font-weight: 100;
+    font-size: 1.75em;
+    color: #ffffff;
+  }
+
+  header .intro-text .motto1_1 {
+    font-size: 4.5em
+      /*our commit*/
+    ;
+    font-weight: 200;
+    /*color: #2C3E50*/
+    color: #e90418;
+    /*Build Your Own Portfolio*/
+    line-height: 1.1em;
+  }
+
+  header .intro-text .motto2 {
+    font-weight: 100;
+    font-size: 3.0em;
+  }
+
+  header .intro-text .motto_sub {
+    font-weight: 200;
+    font-size: 3.0em;
+  }
+
+  header .container_header2 .line_page .spacing {
+    margin-top: 1px;
+  }
+
+  header .intro-text .motto_sub_2 {
+    font-weight: 300;
+    font-size: 2.0em;
+    /*our commit*/
+    ;
+  }
+
+  header .intro-text .motto_sub_3 {
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+
+  /* Header2*****************************************************/
+  header .line_page {
+    background: #ffffff;
+    /*#ff006f;*/
+    color: #616161;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.9em;
+  }
+
+  /*HEADER 2 ****************************************/
+  header .line_page {
+    background: #ffffff;
+    /*#ff006f;*/
+    color: #424242;
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.0em;
+    line-height: 1.0em
+  }
+
+  header .line_page_sub1 {
+    font-size: 0.7em;
+    font-weight: 300;
+  }
+
+  header .line_page_sub2 {
+    font-size: 0.7em;
+    font-weight: 300;
+    color: #ff0000;
+  }
+
+  header .header2_text_sub {
+    font-size: 2.5em
+  }
+
+  header .header2_text_sub2 {
+    font-size: 2.5em
+      /*Build Your Own Portfolio*/
+  }
+
+  /*SECTION 1 ***************************************/
+  section.expected_returns2 .sec3_left_sub_above {
+    margin-top: -30px;
+  }
+
+  section.expected_returns2 .sec3_right {
+    margin-top: -95px;
+  }
+
+  section.expected_returns .sec1_left {
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 00px;
+  }
+
+  section.expected_returns .intro-text .motto_sec1 {
+    padding-top: 5px;
+  }
+
+  /*SECTION 2 ***************************************/
+  section.expected_returns .line_page {
+    color: #424242;
+    font-size: 1.0em;
+    margin-top: 0000px;
+    margin-bottom: -000px;
+    font-weight: 600;
+  }
+
+  section.expected_returns .container_sec2_sub {
+    padding-top: 30px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  section.expected_returns .container_sec2 .line_page .spacing {
+    margin-top: 20px;
+  }
+
+  /*SECTION 3 ***************************************/
+  section.sec3_left_sub .fancy_list li {
+    line-height: 1000.5em;
+    height: auto;
+  }
+
+  section.sec3_left .fancy_list li {
+    line-height: 1000.5em;
+    height: auto;
+  }
+
+  section.expected_returns .sec3_left {
+    font-size: 1.5em;
+    color: #616161;
+    font-weight: 500;
+  }
+
+  section.expected_returns2 .sec3_left_sub {
+    font-size: 1.25em;
+    font-weight: 300;
+  }
+
+  footer.text-center .intro-text {
+    font-size: 2.0em;
+  }
+
+  .retro2 {
+    /* text-shadow: 1px 1px 0 rgb(223, 227, 229), 1.5px 1.5px 0 rgba(0, 0, 0, 0.0);*/
+    color: #3f3f3f;
+    line-height: 1.0em;
+  }
+}
+
+@media (min-width:990px) {
+  section.expected_returns .container-fluid {
+    max-width: 990px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  header .intro-text .motto {
+    font-weight: 550;
+    font-size: 6.00em;
+  }
+
+  header .intro-text .motto12 {
+    font-weight: 600;
+    font-size: 4.0em;
+    color: #ffffff;
+  }
+
+  header .intro-text .motto12exp {
+    font-weight: 100;
+    font-size: 2.0em;
+    color: #ffffff;
+  }
+
+  header .intro-text .motto3 {
+    font-weight: 100;
+    font-size: 4.0em;
+  }
+
+  header .intro-text .motto1_1 {
+    font-size: 5.5em
+      /*our commit*/
+    ;
+    font-weight: 200;
+    /*color: #2C3E50*/
+    color: #e90418;
+    /*Build Your Own Portfolio*/
+    line-height: 1.1em;
+  }
+
+  header .intro-text .motto2 {
+    font-weight: 100;
+    font-size: 4.5em;
+  }
+
+  header .intro-text .motto_sub {
+    font-weight: 600;
+    font-size: 4.0em;
+  }
+
+  header .intro-text .motto_sub_2 {
+    font-weight: 300;
+    font-size: 2.5em;
+    /*our commit*/
+    ;
+  }
+
+  header .intro-text .motto_sub_3 {
+    font-weight: 300;
+    font-size: 1.75em;
+  }
+
+  /*SECTION 1 ***************************************/
+  section.expected_returns .container {
+    margin-bottom: 50px;
+  }
+
+  section.expected_returns2 .sec3_left_sub_above {
+    margin-top: -30px;
+  }
+
+  section.expected_returns2 .sec3_right {
+    margin-top: -95px;
+  }
+
+  section.expected_returns .sec1_left {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  section.expected_returns .container_sec2_sub {
+    padding-top: 0px;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  section.expected_returns .figure img{
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (min-width:1200px) {
+  .image95 {
+    height: auto;
+    max-width: 80%;
+  }
+
+  section.expected_returns .container-fluid {
+    max-width: 1200px;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  /*HEADER 2 ****************************************/
+  header .line_page {
+    font-size: 1.25em;
+    font-weight: 600;
+    /*    font-family: 'Libre Baskerville';*/
+  }
+
+  header .line_page .line_page_sub2 {
+    font-size: 0.80em;
+    font-weight: 600;
+  }
+
+  header .container_header2 .spacing {
+    margin-top: 50px;
+  }
+
+  /*SECTION 1 ***************************************/
+  header .container_header2 {
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+  section .container_sec2 {
+    margin-top: 100px;
+  }
+
+  section.expected_returns .container {
+    margin-bottom: 50px;
+  }
+
+  section.expected_returns2 .sec3_left_sub_above {
+    margin-top: -30px;
+  }
+
+  section.expected_returns2 .sec3_right {
+    margin-top: -95px;
+    text-align: center;
+  }
+
+  section .container_sec3 {
+    margin-top: -10px;
+    margin-bottom: 705px;
+    background-color: #000000;
+  }
+
+  section .container_sec3_color {
+    background-color: #f2f2f2;
+    background-color: #000000;
+  }
+
+  section.expected_returns .intro-text .motto_sec1 {
+    font-size: 1.8em;
+  }
+
+  section.expected_returns .motto_sec1 {
+    font-size: 2.0em;
+  }
+
+  section.expected_returns .intro-text .motto_sec1_spacing {
+    padding: 20px;
+  }
+
+  section.expected_returns .intro-text .motto_sec1_sub1 {
+    font-size: 1.8em;
+  }
+
+  section.expected_returns .intro-text .motto_sec1_sub2 {
+    font-size: 1.5em;
+  }
+
+  section.expected_returns .intro-text .motto_sec1_sub3 {
+    font-size: 1.8em;
+  }
+
+  section.expected_returns .sec3_left {
+    font-size: 1.5em;
+  }
+
+  section.expected_returns2 .sec3_left_sub {
+    font-size: 1.5em;
+  }
+
+  section.expected_returns2 .sec3_left_sub_above {
+    font-size: 2.0em;
+    background: linear-gradient(110deg, #212121 60%, #616161 60%);
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  /*SECTION 2 ***************************************/
+  section.expected_returns .line_page {
+    font-size: 1.25em;
+  }
+
+  section.expected_returns .container_sec2 .line_page .spacing {
+    margin-top: 25px;
+  }
+}
+
+.navbar-custom {
+  background: #212121;
+  /*#2C3E50;*/
+  font-family:
+    /*Montserrat,"Helvetica Neue",Helvetica,*/
+    Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /*text-transform:uppercase;*/
+  /*(top left company name)*/
+  font-weight: 500;
+  border: none
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-brand.active, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:hover {
+  color: #fff
+}
+
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px
+}
+
+.navbar-custom .navbar-nav li a {
+  color: #fff
+}
+
+.navbar-custom .navbar-nav li a:hover {
+  color: #fff
+    /*top three items*/
+}
+
+.navbar-custom .navbar-nav li a:active, .navbar-custom .navbar-nav li a:focus {
+  color: #fff
+}
+
+.navbar-custom .navbar-nav li.active a, .navbar-custom .navbar-nav li.active a:active, .navbar-custom .navbar-nav li.active a:focus, .navbar-custom .navbar-nav li.active a:hover {
+  color: #fff;
+  /* background: #0000ff --> */
+  background: #2C3E50
+}
+
+.navbar-custom .navbar-toggle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-color: #fff
+}
+
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:hover {
+  background-color: #18BC9C;
+  color: #fff;
+  border-color: #18BC9C
+}
+
+@media (min-width:768px) {
+  .navbar-custom {
+    padding: 10px 0;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    /*background-color: #020202;*/
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  .navbar-custom.affix {
+    padding: 5px 0
+  }
+
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em
+  }
+}
+
+section {
+  padding: 100px 0
+}
+
+section h2 {
+  margin: 0;
+  font-size: 3em
+}
+
+section.success {
+  background: #fff;
+  color: #2C3E50
+    /*About*/
+  ;
+  font-size: 1em
+}
+
+@media (max-width:768px) {
+  section {
+    padding: 75px 0
+  }
+
+  section.first {
+    padding-top: 75px
+  }
+}
+
+section.expected_returns {
+  background: #ffffff;
+  color: #2C3E50;
+  /*About*/
+}
+
+section.research {
+  background: #F2F4F4;
+  color: #2C3E50
+    /*About*/
+}
+
+section.research_grey {
+  background: #F2F4F4;
+  color: #2C3E50
+    /*About*/
+}
+
+@media (max-width:768px) {
+  section {
+    padding: 75px 0
+  }
+
+  section.first {
+    padding-top: 75px
+  }
+}
+
+#portfolio .portfolio-item {
+  margin: 0;
+  /*0 0 15px;*/
+  right: 0;
+  /*width: 1000px;*/
+}
+
+#returns .returns-item {
+  margin: 0;
+  /*0 0 15px;*/
+  right: 0
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 1100px;
+  /*portfolio figure size*/
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, .9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3, #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0
+}
+
+#portfolio * {
+  z-index: 2
+}
+
+@media (min-width:768px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px
+  }
+}
+
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #eee
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: 0 0;
+  box-shadow: none !important;
+  resize: none
+}
+
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: .85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top .3s ease, opacity .3s ease;
+  -moz-transition: top .3s ease, opacity .3s ease;
+  -ms-transition: top .3s ease, opacity .3s ease;
+  transition: top .3s ease, opacity .3s ease
+}
+
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #eee
+}
+
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1
+}
+
+.floating-label-form-group-with-focus label {
+  color: #18BC9C
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eee
+}
+
+fo000000 #oter {
+  color: #fff
+}
+
+footer h3 {
+  margin-bottom: 30px
+}
+
+footer .footer-above {
+  padding-top: 0px;
+  margin-top: 10px;
+  background-color: #212121
+    /*#000000*/
+    /*#2C3E50*/
+    /*royal blue*/
+}
+
+/*
+@media (min-width:768px) {
+
+footer .footer-above {
+  padding-top: 0px;
+    margin-top: 0px;
+}
+}
+@media (min-width:868px) {
+
+footer .footer-above {
+  padding-top: 0px;
+    margin-top: 0px;
+}}
+
+@media (min-width:900px) {
+
+footer .footer-above {
+  padding-top: 0px;
+margin-top: 0px;
+}
+}
+
+@media (min-width:990px) {
+
+footer .footer-above {
+  padding-top: 0px;
+margin-top: 0px;
+}
+}
+
+@media (min-width:1050px) {
+
+footer .footer-above {
+  padding-top: 0px;
+margin-top:0px;
+}
+}
+
+@media (min-width:1200px) {
+
+footer .footer-above {
+  padding-top: 0px;
+margin-top: 0px;
+}
+}
+*/
+footer .footer-col {
+  margin-bottom: 50px
+}
+
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140
+}
+
+.btn-outline {
+  color: #fff;
+  font-size: 20px;
+  border: 2px solid #fff;
+  background: 0 0;
+  transition: all .3s ease-in-out;
+  margin-top: 15px
+}
+
+.btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+  color: #18BC9C;
+  background: #fff;
+  border: 2px solid #fff
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+  font-weight: 700
+}
+
+.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #1a242f;
+  border-color: #161f29
+}
+
+.btn-primary.active, .btn-primary:active, .open .dropdown-toggle.btn-primary {
+  background-image: none
+}
+
+.btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+  background-color: #2C3E50;
+  border-color: #2C3E50
+}
+
+.btn-primary .badge {
+  color: #2C3E50;
+  background-color: #fff
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #18BC9C
+    /*send*/
+  ;
+  border-color: #18BC9C;
+  font-weight: 700
+}
+
+.btn-success.active, .btn-success:active, .btn-success:focus, .btn-success:hover, .open .dropdown-toggle.btn-success {
+  color: #fff;
+  background-color: #128f76;
+  border-color: #11866f
+}
+
+.btn-success.active, .btn-success:active, .open .dropdown-toggle.btn-success {
+  background-image: none
+}
+
+.btn-success.disabled, .btn-success.disabled.active, .btn-success.disabled:active, .btn-success.disabled:focus, .btn-success.disabled:hover, .btn-success[disabled], .btn-success[disabled].active, .btn-success[disabled]:active, .btn-success[disabled]:focus, .btn-success[disabled]:hover, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success.active, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:hover {
+  background-color: #18BC9C;
+  border-color: #18BC9C
+}
+
+.btn-success .badge {
+  color: #18BC9C;
+  background-color: #fff
+}
+
+.btn-social {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px
+}
+
+.scroll-top {
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 50px;
+  height: 50px;
+  z-index: 1049
+}
+
+.scroll-top .btn {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  line-height: 28px
+}
+
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center
+}
+
+.portfolio-modal .modal-content h2 {
+  margin: 0;
+  font-size: 3em
+}
+
+.portfolio-modal .modal-content h3 {
+  margin: 0;
+  font-size: 1.5em
+}
+
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px
+}
+
+.portfolio-modal .modal-content .item-details {
+  margin: 30px 0
+}
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer
+}
+
+.portfolio-modal .close-modal:hover {
+  opacity: .3
+}
+
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #2C3E50;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 1051
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #2C3E50;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  z-index: 1052
+}
+
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none
+}
+
+#skipnav a {
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  color: #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-bottom-right-radius: 8px;
+  background: 0 0;
+  transition: top 1s ease-out, background 1s linear;
+  z-index: 2000
+}
+
+#skipnav a:focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #18BC9C;
+  outline: 0;
+  transition: top .1s ease-in, background .5s linear
+}
+
+div#maincontent {
+  outline: 0
+}
+
+.bargraph {
+  list-style: none;
+  padding-top: 20px;
+  width: 560px;
+}
+
+ul {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -40px;
+}
+
+ul-motto {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+ul-sec3 {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.bargraph li {
+  height: 35px;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+
+ul-sec3.bargraph li {
+  height: 35px;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+  margin-left: 5000px
+}
+
+ul-motto.bargraph li {
+  height: 35px;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 35px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+
+ul.bargraph li.reddeep {
+  background: #ED1C24;
+  width: 100%;
+}
+
+ul.bargraph li.redpink {
+  background: #EF465B;
+  width: 95%;
+}
+
+ul.bargraph li.pink {
+  background: #E55A6B;
+  width: 93%;
+}
+
+ul.bargraph li.orangered {
+  background: #E28159;
+  width: 85%;
+}
+
+ul.bargraph li.orange {
+  background: #F99C1C;
+  width: 75%;
+}
+
+ul.bargraph li.yellow {
+  background: #F4D41E;
+  width: 74%;
+}
+
+ul.bargraph li.green {
+  background: #97B546;
+  width: 55%;
+}
+
+ul.bargraph li.greenbright {
+  background: #36B669;
+  width: 40%;
+}
+
+ul.bargraph li.greenblue {
+  background: #42BDA5;
+  width: 30%;
+}
+
+ul.bargraph li.blue {
+  background: #00AEEF;
+  width: 20%;
+}
+
+ul.bargraph li.xaxis {
+  background: url(../images/x-axis.jpg);
+  height: 49px;
+}
+
+.sp-5 {
+  letter-spacing: -5px;
+}
+
+ol {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+ol-p {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+ol>li {
+  margin: 0.1em;
+  padding: 0 0 0 2em;
+  text-indent: -1.5em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol>li:before {
+  display: inline-block;
+  width: 1.5em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item, upper-roman) ".";
+}
+
+op-p>li {
+  margin: 0.1em;
+  padding: 0 0 0 2em;
+  text-indent: -1.5em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol-p>li:before {
+  display: inline-block;
+  width: 1.5em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item, circle) ".";
+}
+
+.underline1 {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.underline2 {
+  text-decoration: underline;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #616161;
+  /*#ff006f;*/
+  margin: 8px 0px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.hr-sect2 {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #ffffff;
+  /*#ff006f;*/
+  margin: 8px 0px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: #424242;
+  /*#ff006f;*/
+  height: 0.5px;
+  font-size: 1000px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+
+.retro {
+  /* text-shadow: 1px 1px 0 rgb(223, 227, 229), 1.5px 1.5px 0 rgba(0, 0, 0, 0.0);*/
+  color: #3f3f3f;
+  line-height: 30px;
+}
+
+.retro_sub {
+  /* text-shadow: 1px 1px 0 rgb(223, 227, 229), 1.5px 1.5px 0 rgba(0, 0, 0, 0.0);*/
+  color: #e90418;
+  line-height: 40px;
+  font-weight: 400;
+  margin-top: -0px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.retro_2 {
+  text-shadow: 1px 1px 0 rgb(223, 227, 229), 1px 1px 0 rgba(0, 0, 0, 0.25);
+  color: #3f3f3f;
+}
+
+.element {
+  /*text-shadow: 0 1px 0 rgba(255, 255, 255, 1);*/
+}
+
+.element_2 {
+  text-shadow: 0 1px 0 #bdbdbd;
+}
+
+.element_3 {
+  text-shadow: 0 1px 0 #616161;
+}
+
+.container_sec1_color {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background: #fafafa;
+  /* fallback for old browsers */
+}
+
+@function makelongshadow($length, $angle) {
+  $val: 0px 0px transparent;
+
+  @for $i from 1 through $length {
+    $val: #{$val}, #{$i}px #{$i*$angle}px #aaa;
+  }
+
+  @return $val;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
+.txt {
+  text-align: center;
+  font-family: 'Roboto';
+  /* font-size: 12vmin; */
+  font-weight: 700;
+  /* animation: netflix_style 3.0s infinite;*/
+  animation: netflix_style  infinite;
+  outline: none;
+  white-space: nowrap;
+  background: #e90418;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0.8em;
+}
+
+@keyframes netflix_style {
+  0% {
+    text-shadow: makelongshadow(100, 1);
+    color: #f3f3f3;
+    transform: scale(1.5, 1.5);
+    transform: scale(1.0, 1.0);
+  }
+
+  10% {
+    text-shadow: makelongshadow(100, 1.5);
+    color: #f3f3f3;
+    transform: scale(1.5, 1.5);
+    transform: scale(1.0, 1.0);
+  }
+
+  15% {
+    color: #f3f3f3;
+  }
+
+  20% {
+    color: #ffffff;
+    text-shadow: none;
+    transform: scale(1.0, 1.0);
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+    color: #e90418;
+    transform: scale(0.85, 0.9);
+    transform: scale(1.0, 1.0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.letterpress {
+  text-shadow: 1px 2px 3px #DDEEFF,
+    0 0 0 black,
+    -1px 1px 0 #DDEEFF,
+    1px 1px 0 white;
+  color: #ffffff;
+  letter-spacing: -5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.line_break_spacing {
+  line-height: 1.1em;
+}
+
+.line_break_spacing_2 {
+  line-height: 0.1em;
+}
+
+/*#overlay img { display: none; }*/
+#overlay.currently-loading img {
+  display: block;
+  width: 100%;
+  heigth: 100%;
+}
+
+header .slowme {
+  background: url("../animation_Pred_220719.gif") 0 0 no-repeat;
+  background-size: 90%;
+  animation: anim-ss steps(1000) 10s infinite;
+}
+
+@keyframes anim-ss {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}
+
+header .intro-text .motto_short .one {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header .intro-text .motto_short .one {
+  /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+  animation: showup 70s infinite;
+}
+
+/*
+div:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+div:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+*/
+@-webkit-keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+
+  20% {
+    margin-left: -800px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+
+  30% {
+    width: 355px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    content: "Geeks";
+  }
+
+  50% {
+    content: "for";
+  }
+
+  75% {
+    content: "Geeks";
+  }
+}
+
+header .intro-text .motto_short .wrapper {
+  /*background-color: #414345; */
+  height: 15vh;
+  color: white;
+  /*display: block;*/
+  /*flex;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .intro-text .motto .wrapper {
+  /*background-color: #414345; */
+  height: 15vh;
+  color: white;
+  /*display: block;*/
+  /*flex;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hi {
+  /*animation: pulse 5s;*/
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  font-size: 1.0em;
+  line-height: 1.1em;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #051E3E;
+  }
+
+  10% {
+    color: #051E3E;
+  }
+
+  30% {
+    color: white;
+  }
+
+  50% {
+    color: #051E3E;
+  }
+
+  60% {
+    color: #051E3E;
+  }
+
+  80% {
+    color: white;
+  }
+
+  100% {
+    color: #051E3E;
+  }
+}
+
+#hi:after {
+  content: "";
+  /*animation: spin 5s linear;*/
+  -webkit-animation: spin 5s linear;
+  /*animation: spin 10s infinite;
+  animation: spin 10s infinite;*/
+  /*animation-fill-mode: forwards;*/
+  -webkit-animation-fill-mode: forwards;
+  /*animation: spin 20s linear infinite;*/
+  -webkit-animation:  spin 60s linear infinite;
+  /*animation-iteration-count: 1;*/
+
+  -moz-animation-fill-mode: forwards;
+  -moz-animation:  spin 60s linear infinite;
+
+  -o-animation-fill-mode: forwards;
+  -o-animation:  spin 60s linear infinite;
+
+  animation-fill-mode: forwards;
+  animation:  spin 60s linear infinite;
+
+    animation:  gif_ani 60s linear infinite;
+}
+
+
+
+@-webkit-keyframes spin {
+/*url("../animation_Pred_220719.gif");*/
+
+3% {
+    font-size: 100%;
+  display: block;
+  white-space: pre-line;
+  content: "The Best Stocks. \A  Now! \A Artificial Intelligence.";
+}
+
+
+4% {
+    font-size: 100%;
+  display: block;
+  white-space: pre-line;
+opacity:0.5;
+  content: url("../animation_Pred_220719.gif"); /* 10% 10% transparent;;*/
+
+}
+
+
+  6% {
+    display: block;
+    white-space: pre-line;
+            font-size: 100%;
+    content: "The Universal Question.";
+  }
+
+  9% {
+    font-style: normal;
+          font-size: 100%;
+          font-weight: 700;
+    content: "The Best Stocks?";
+  }
+
+  10.99999% {
+    font-style: normal;
+          font-size: 100%;
+          font-weight: 700;
+    content: "The Best Stocks.";
+  }
+  11% {
+    font-style: normal;
+          font-size: 100%;
+          font-weight: 100;
+    content: "In 1720 \A Isaac Newton said";
+  }
+  13.999% {
+    font-style: normal;
+          font-size: 100%;
+          font-weight: 100;
+    content: "In 1720 \A Isaac Newton said";
+  }
+  14% {
+    font-weight: 100;
+      font-size: 70%;
+
+    content: "“I can calculate the motions of heavenly bodies, \A but not the madness of people.”";
+  }
+
+
+  16.999% {
+    font-weight: 100;
+          font-size: 70%;
+
+    content: "“I can calculate the motions of heavenly bodies, \A but not the madness of people.”";
+  }
+
+
+  17% {
+    font-style: normal;
+          font-size: 100%;
+          font-weight: 100;
+    content: "In 2007 \A John C. Bogle";
+  }
+  19% {
+    font-style: normal;
+          font-size: 100%;
+          font-weight: 100;
+    content: "In 2007 \A John C. Bogle";
+  }
+  19.001% {
+    font-weight: 100;
+      font-size: 70%;
+
+    content: "“Don't look for the needle in the haystack. \A Just buy the haystack!”";
+  }
+  /*
+  18% {
+    font-weight: 100;
+      font-size: 70%;
+      font-style: italic;
+    content: "“Don't look for the needle in the haystack. \A Just buy the haystack!”";
+  }
+*/
+  21.999% {
+    font-weight: 100;
+          font-size: 70%;
+    content: "“Don't look for the needle in the haystack. \A Just buy the haystack!”";
+  }
+
+
+
+
+22% {
+    font-weight: 700;
+              font-size: 100%;
+                        font-style: normal;
+    content: "Force in Social Progress.";
+  }
+
+
+23.999% {
+      font-size: 100%;
+      opacity: 1;
+      font-weight: 700;
+      content: "Force in Social Progress.";
+    }
+
+
+  24% {
+      font-size: 50%;
+      opacity: 1;
+      font-weight: 100;
+      content: "Andrew Carnegie (1835–1919)";
+    }
+
+    26% {
+      font-size:50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919) \A \
+      J. P. Morgan (1837 – 1913)";
+    }
+
+    27% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919) \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937)";
+    }
+
+    28% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)\A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931)";
+    }
+
+    29% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)\A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947)";
+    }
+
+    30% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966)";
+    }
+
+     31% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+      Ray Kroc (1902 – 1984)";
+    }
+
+32% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+      Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)";
+    }
+
+33% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+            Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  ";
+    }
+
+    34% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+            Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  \A \
+      Bill Gates (1955–)";
+    }
+
+  35% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+            Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  \A \
+      Bill Gates (1955–) \A \
+Jeff Bezos (1964–)";
+    }
+
+    36% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+            Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  \A \
+      Bill Gates (1955–) \A \
+Jeff Bezos (1964–) \A \
+      Elon Musk (1971–) ";
+    }
+
+    37% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+            Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  \A \
+      Bill Gates (1955–) \A \
+      Jeff Bezos (1964–) \A \
+      Elon Musk (1971–) \A \
+      Larry Page (1973–)";
+    }
+
+    38% {
+      font-size: 50%;
+      opacity: 1;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+      Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  \A \
+      Bill Gates (1955–) \A \
+      Jeff Bezos (1964–) \A \
+      Elon Musk (1971–) \A \
+      Larry Page (1973–)\A \
+      Mark Zuckerberg (2004–)";
+    }
+
+
+
+    38.9999% {
+      font-size: 50%;
+      opacity: 1;
+             font-weight: 100;
+      content: "Andrew Carnegie (1835–1919)  \A \
+      J. P. Morgan (1837–1913)  \A \
+      J. D. Rockefeller (1839–1937) \A \
+      Thomas Edison (1847–1931) \A \
+      Henry Ford (1863–1947) \A \
+      Walt Disney (1901–1966) \A \
+      Ray Kroc (1902–1984) \A \
+      Sam Walton (1918–1992)\A \
+      Steve Jobs (1955–2011)  \A \
+      Bill Gates (1955–) \A \
+      Jeff Bezos (1964–) \A \
+      Elon Musk (1971–) \A \
+      Larry Page (1973–)\A \
+      Mark Zuckerberg (2004–) ";
+    }
+
+
+39% {
+        font-size: 100%;
+        opacity: 1;
+       font-weight: 700;
+        content: "We can have";
+
+      }
+
+      40.9999% {
+              font-size: 100%;
+              opacity: 1;
+             font-weight: 700;
+              content: "We can have";
+
+            }
+
+41% {
+    font-size: 100%;
+    opacity: 1;
+           font-weight: 100;
+    content: "Apple";
+  }
+  42% {
+      font-size: 100%;
+      opacity: 1;
+             font-weight: 100;
+      content: "Apple";
+    }
+
+
+43% {
+
+    font-size: 100%;
+    opacity: 1;
+    content: "Google";
+  }
+
+44% {
+    font-size: 100%;
+    opacity: 1;
+    content: "Microsoft"
+  }
+
+
+
+
+45% {
+    font-size: 100%;
+    opacity: 1;
+    content: "Amazon";
+  }
+
+46% {
+    content: "Visa";
+  }
+
+47% {
+    content: "Exxon Mobile";
+  }
+
+48% {
+    content: "Walmart";
+  }
+
+49% {
+    content: "Bank of America";
+  }
+
+50% {
+    content: "Coca-Cola";
+  }
+
+51% {
+    content: "T-Mobile";
+  }
+
+52% {
+    content: "Nike";
+  }
+
+53% {
+    content: "Tesla";
+  }
+
+54% {
+    content: "Intel";
+  }
+
+  55% {
+    font-weight: 100;
+    font-size: 100%;
+    opacity: 1;
+    content: "Starbucks";
+    font-style: normal;
+    word-break: normal;
+  }
+
+  55.001% {
+    font-weight: 100;
+    font-size: 50%;
+    opacity: 1;
+    font-style: normal;
+     word-break: break-all;
+    content: "Apple Google Amazon Visa Exxon Walmart JP Morgan Coca-Cola \
+     T Mobile Nike AMD Qualcomm Starbucks Apple Google Amazon Visa Exxon \
+     Walmart JP Morgan Coca-Cola T Mobile Nike AMD Qualcomm Starbucks \
+     Amazon Tesla Berkshire Meta Unitedhealth Nvidia Johnson&Johnson \
+     Procter&Gamble Chevron Mastercard BOA Pfizer Walt Disney (1901 – 1966) Adobe \
+     Mcdonals Cisco Verizon Wells Fargo Texas Instrument Morgan Stanley \
+     Intel CVS Health AT&T S&P Global Goldman Sachs Paypal Blackrock \
+     Deere&Company Netflix Citigroup Boeing Applied Material 3M Duke Energy \
+     Booking Holdings Alphabet Gilead Sciences Chubb Altria Vertex Pharmaceuticals \
+     Charter Communications Becton Dickinson CSX Northrop Grumman US Bancorp \
+     CME Lam Research Waste Management Micron Technology Progressive PNC Financial Services \
+     Dominion Energy Fiserv Moderna Regeneron Pharmaceuticals Truist Financial Corporation \
+     Colgate-Palmolive Sherwin Williams Illinois Tool General Dynamics EOG Resources \
+     Norfolk Souther Edwards Lifesciences Equinix Ford Aon Activision Blizzar ..."
+      /*content: "........."*/
+  }
+
+  56% {
+    /*font-weight: 200;*/
+    font-size: 50%;
+    opacity: 1;
+    content: "Apple Google Amazon Visa Exxon Walmart JP Morgan Coca-Cola \
+     T Mobile Nike AMD Qualcomm Starbucks Apple Google Amazon Visa Exxon \
+     Walmart JP Morgan Coca-Cola T Mobile Nike AMD Qualcomm Starbucks \
+     Amazon Tesla Berkshire Meta Unitedhealth Nvidia Johnson&Johnson \
+     Procter&Gamble Chevron Mastercard BOA Pfizer Walt Disney (1901 – 1966) Adobe \
+     Mcdonals Cisco Verizon Wells Fargo Texas Instrument Morgan Stanley \
+     Intel CVS Health AT&T S&P Global Goldman Sachs Paypal Blackrock \
+     Deere&Company Netflix Citigroup Boeing Applied Material 3M Duke Energy \
+     Booking Holdings Alphabet Gilead Sciences Chubb Altria Vertex Pharmaceuticals \
+     Charter Communications Becton Dickinson CSX Northrop Grumman US Bancorp \
+     CME Lam Research Waste Management Micron Technology Progressive PNC Financial Services \
+     Dominion Energy Fiserv Moderna Regeneron Pharmaceuticals Truist Financial Corporation \
+     Colgate-Palmolive Sherwin Williams Illinois Tool General Dynamics EOG Resources \
+     Norfolk Souther Edwards Lifesciences Equinix Ford Aon Activision Blizzar ..."
+      /*content: "........."*/
+  }
+
+  59.0% {
+font-style: italic;
+    font-size: 50%;
+    opacity: 1;
+    font-weight: 100;
+    content: "Apple Google Amazon Visa Exxon Walmart JP Morgan Coca-Cola \
+     T Mobile Nike AMD Qualcomm Starbucks Apple Google Amazon Visa Exxon \
+     Walmart JP Morgan Coca-Cola T Mobile Nike AMD Qualcomm Starbucks \
+     Amazon Tesla Berkshire Meta Unitedhealth Nvidia Johnson&Johnson \
+     Procter&Gamble Chevron Mastercard BOA Pfizer Walt Disney (1901 – 1966) Adobe \
+     Mcdonals Cisco Verizon Wells Fargo Texas Instrument Morgan Stanley \
+     Intel CVS Health AT&T S&P Global Goldman Sachs Paypal Blackrock \
+     Deere&Company Netflix Citigroup Boeing Applied Material 3M Duke Energy \
+     Booking Holdings Alphabet Gilead Sciences Chubb Altria Vertex Pharmaceuticals \
+     Charter Communications Becton Dickinson CSX Northrop Grumman US Bancorp \
+     CME Lam Research Waste Management Micron Technology Progressive PNC Financial Services \
+     Dominion Energy Fiserv Moderna Regeneron Pharmaceuticals Truist Financial Corporation \
+     Colgate-Palmolive Sherwin Williams Illinois Tool General Dynamics EOG Resources \
+     Norfolk Souther Edwards Lifesciences Equinix Ford Aon Activision Blizzar ..."
+  }
+
+  59.999% {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100%;
+    opacity: 1;
+         word-break: break-all;
+    content: "In S&P500";
+  }
+  60% {
+    font-style: normal;
+        word-break: normal;
+    font-weight: 500;
+    font-size: 100%;
+    opacity: 1;
+    content: "In S&P500";
+  }
+
+  /*color: transparent;
+content: '';
+display: block;*/
+  /*background-image: url("../animation_Pred_220719.gif");
+   display: inline-flex;
+background-size: contain;*/
+  /*
+background-image: url("../animation_Pred_220719.gif");
+background-size: 90px 20px;
+background-repeat: no-repeat;*/
+  /*background-size: 90px 20px;
+background-repeat: no-repeat;
+width: 130px;
+height: 20px;
+margin-left: -120px;
+margin-top: -3px;
+transform: scale(1.5);
+content: "";
+position: absolute;*/
+  63% {
+    font-size: 100%;
+    opacity: 1;
+    content: "What are the best stocks?";
+  }
+
+  65% {
+    font-size: 100%;
+    opacity: 1;
+    content: "The Best Stocks?";
+  }
+
+  67% {
+    font-size: 100%;
+    opacity: 1;
+    content: "Now!";
+  }
+
+  69% {
+    font-size: 100%;
+    opacity: 1;
+    display: block;
+    white-space: pre-line;
+    content: "With Artificial Intelligence";
+  }
+
+
+
+  71% {
+      font-size: 10%;
+    /*line-height: 1.1em;*/
+    display: block;
+    white-space: pre-line;
+    content: "The Best Stocks. \A Now! \A Artificial Intelligence.";
+}
+71.3% {
+      font-size: 100%;
+    display: block;
+    white-space: pre-line;
+    content: "The Best Stocks. \A Now! \A Artificial Intelligence.";
+  }
+
+  100% {
+      font-size: 100%;
+    display: block;
+    white-space: pre-line;
+    content: "The Best Stocks. \A  Now! \A Artificial Intelligence.";
+  }
+}
+
+
+
+header .intro-text .motto_short .wrapper_gif {
+  /*background-color: #414345; */
+  height: 15vh;
+  color: white;
+  /*display: block;*/
+  /*flex;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .intro-text .motto .wrapper_gif {
+  /*background-color: #414345; */
+  height: 15vh;
+  color: white;
+  /*display: block;*/
+  /*flex;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@-webkit-keyframes gif_ani {
+/*url("../animation_Pred_220719.gif");*/
+
+3% {
+    font-size: 100%;
+  display: block;
+  white-space: pre-line;
+  content: url("../animation_Pred_220719.gif");
+}
+
+
+50% {
+    font-size: 10%;
+  display: block;
+  white-space: pre-line;
+opacity:0.5;
+  content: url("../animation_MeanR_Line_220719.gif"); /* 10% 10% transparent;;*/
+
+}
+
+}
+
+
+#hi_gif:after {
+  content: "";
+  /*animation: spin 5s linear;*/
+  -webkit-animation: gif_ani 5s linear;
+  /*animation: spin 10s infinite;
+  animation: spin 10s infinite;*/
+  /*animation-fill-mode: forwards;*/
+  -webkit-animation-fill-mode: forwards;
+  /*animation: spin 20s linear infinite;*/
+  -webkit-animation:  gif_ani 5s linear infinite;
+  /*animation-iteration-count: 1;*/
+
+  -moz-animation-fill-mode: forwards;
+  -moz-animation:  gif_ani 5s linear infinite;
+
+  -o-animation-fill-mode: forwards;
+  -o-animation:  gif_ani 5s linear infinite;
+
+  animation-fill-mode: forwards;
+
+    animation: gif_ani 5s linear infinite;
+}
+
+:root {
+  --text-background: linear-gradient(to right, darkblue, darkorchid);
+}
+
+.text-gradient-red {
+  --text-background: linear-gradient(to right, darkred, red);
+}
+/*
+.text{
+
+  background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+
+}
+*/
+.text {
+
+  position: relative;
+  text-align: center;
+/*  font-size:100px;
+  font-family: arial;
+  font-weight: 900; */
+/*  background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% ); */
+  background-image: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: brightness(1.85);
+}
