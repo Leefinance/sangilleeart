@@ -447,6 +447,24 @@ header .header2_text_sub2 {
   /*Build Your Own Portfolio*/
 }
 
+header.hero .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header.hero .col-lg-10 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.hero p.lead {
+    width: 100%;
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* SECTION1*****************************************************/
 section.expected_returns {
   padding-top: 50px;
@@ -2932,3 +2950,4 @@ opacity:0.5;
   -webkit-text-fill-color: transparent;
   filter: brightness(1.85);
 }
+
