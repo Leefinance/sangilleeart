@@ -453,7 +453,7 @@ header.hero .container {
 }
 
 header.hero {
-    background-image: url('grape.jpg'),
+    background-image: url('../grape.jpg'),
                       radial-gradient(1200px 500px at 50% 30%, #1c1c1c, #0b0b0b);
     background-size: cover;
     background-position: center;
@@ -2962,5 +2962,6 @@ opacity:0.5;
   -webkit-text-fill-color: transparent;
   filter: brightness(1.85);
 }
+
 
 
