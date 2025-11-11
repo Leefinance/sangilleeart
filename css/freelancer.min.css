@@ -452,6 +452,18 @@ header.hero .container {
     padding-right: 0;
 }
 
+header.hero {
+    background-image: url('grape.jpg'),
+                      radial-gradient(1200px 500px at 50% 30%, #1c1c1c, #0b0b0b);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 7rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
 header.hero .col-lg-10 {
     margin-left: auto;
     margin-right: auto;
@@ -2950,4 +2962,5 @@ opacity:0.5;
   -webkit-text-fill-color: transparent;
   filter: brightness(1.85);
 }
+
 
