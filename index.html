@@ -1,701 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!--
+      DeepAllocation – modernized & cleaned HTML
+      - Bootstrap 5 (CDN)
+      - Single responsive viewport
+      - Fixed invalid tags & nesting
+      - Removed inline styles; added utility classes
+      - Accessible nav / headings / alt text
+      - Lazy-loaded images
+      - SEO/meta/OG tags
+    -->
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NWBL41F3L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    <title>AI Stock Prediction: Monthly Best Stocks to Buy Now | DeepAllocation</title>
+    <meta name="description" content="AI-powered S&amp;P 500 stock rankings and Top‑N portfolios. Explore weekly forecasts, backtests, and an investing frontier by DeepAllocation." />
 
-    gtag('config', 'G-3NWBL41F3L');
-  </script>
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DeepAllocation – AI Stock Prediction" />
+    <meta property="og:description" content="Weekly AI stock rank forecasts for S&amp;P 500 and Top‑N portfolios." />
+    <meta property="og:image" content="img/og-cover.png" />
+    <meta property="og:url" content="https://your-domain.example/" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NWBL41F3L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+      gtag('config', 'G-3NWBL41F3L');
+    </script>
 
+    <!-- Favicons (replace with your files) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-  <!--<title>Homepage: DeepAllocation</title>-->
-  <!--<title>Monthly Best Stocks Picked By AI</title>-->
-  <title>AI Stock Prediction: Monthly Best Stocks to Buy Now</title>
-  <!--<title>AI Investing Now</title>-->
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-8H4y8A3w1fE0f1m4q3zq2sQmN0r1o5qgqC1hFv8K1q8zJ9oTnS6LwHc6wHjnQ0YkEo7+f2J8n3Bq3V2m2k9s1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
+    <!-- Site CSS (add your overrides) -->
+    <link rel="stylesheet" href="css/freelancer.min.css" />
+    <style>
+      :root { --brand:#e90418; }
+      body { font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+      .navbar-custom { background:#111; }
+      .navbar-brand b { color:#fff; }
+      header.hero { background: radial-gradient(1200px 500px at 50% 30%, #1c1c1c, #0b0b0b); color:#fff; padding: 7rem 0 5rem; position:relative; overflow:hidden; }
+      .hero .lead { max-width: 52rem; }
+      .hero .badge-link { color:#F8D64F; text-decoration:none; }
+      .section-eyebrow { font-weight:700; color:var(--brand); text-transform:uppercase; letter-spacing:.08em; }
+      .figure-shadow img { box-shadow: 0 8px 30px rgba(0,0,0,.25); border-radius:.5rem; }
+      footer { background:#111; color:#bbb; padding:3rem 0; }
+      a.text-underline-none { text-decoration: none; }
+    </style>
 
-  <!-- Custom Fonts -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet' type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <!-- Google site verification (keep if used) -->
+    <meta name="google-site-verification" content="j4eJeWiuMtlvQ5ncS8_cj71vtaEu1dS4PSV4-TSoBow" />
+  </head>
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <script data-ad-client="ca-pub-4155586808183972" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <meta name="google-site-verification" content="j4eJeWiuMtlvQ5ncS8_cj71vtaEu1dS4PSV4-TSoBow" />
-</head>
-
-
-
-<body id="page-top" class="index">
-  <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
-  <!-- Navigation -->
-
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom ">
-
-    <div class="container">
-
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+  <body id="page-top">
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"><b>DeepAllocation</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#page-top">
-          <font color=#ffffff><b>DeepAllocation </b> </font>
-          <!--<font color=cc00000><b>DeepAllocation</b></font>-->
-        </a>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#overview">Overview &amp; Method</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stockranking">StockRanking</a></li>
+            <li class="nav-item"><a class="nav-link" href="#performance">Performance</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li class="page-scroll">
-            <a href="#Overview">Overview & Method</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#StockRanking">StockRanking</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#Performance">Performance</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#Contact">Contact</a>
-          </li>
-
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <!-- Header -->
-  <header>
-    <div class="container" id="maincontent" tabindex="-1">
-      <div class="gradientHolder">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="intro-text">
-              <ul-motto type="disk">
-                <li style="list-style-type: none;">
-                  <!--
-                  <div class="motto1_1" style="display:inline;">
-                     Science will <br>predict stock markets.
-
-                  </div>
-                -->
-                  <!--
-                  <div class="motto" style="display:inline;">Targeting
-                  </div>
-                -->
-                  <br>
-                  <!--
-                  <div class="motto" style="display:inline">Trading and Portfolio.
-                  </div>
-                -->
-
-                <div class="motto">
-                  <!--Science will </br> predict </br>stock markets.-->
-                  <!--AI Investing Now-->
-                  <!--Let's have best stocks-->
-                  The Best Stocks
-                  <!--
-                  <hi class="text">
-                  by AI</hi>.
-                -->
-                  <!--Powered by Artificial Intelligence.-->
-                </div>
-
-
-                  <div class="motto_short">
-                    <!--Science will </br> predict </br>stock markets.-->
-                    <!--AI Investing Now-->
-                    The Best Stocks
-                    <!--
-                    <hi class="text">
-                    by AI</hi>.
-                  -->
-                    <!--Powered by Artificial Intelligence.-->
-                  </div>
-
-                  <!--
-                  <div class="motto">
-                    Diversified portfolios tailored to your risk profile and choice of investment style
-                    <hi class="text">
-                      with AI</hi>.
-                  </div>
-                -->
-
-                  <br>
-                </li>
-                <br><br>
-                <div style="line-height:0.9em;">
-                  <div class="motto_sub_3" style="display:inline;line-height:1.1em;">
-                    <A HREF="https://www.reddit.com/r/StockRank/" style="color: #ffffff">
-                      <hi class="text">
-                      AI Stock Rank Forecasts</hi> for building diversified portfolios
-                      tailored to your risk profile and investment style.
-                      <!--What we focus on.-->
-                      <style type="text/css">
-                        a:hover {
-                          color: #0000FF;
-                          text-decoration: none;
-
-                        }
-                      </style>
-                    </A>
-                  </div><br><br><br><br><br>
-
-                  <!--
-                  <div class="motto_sub_3" style="display:inline;line-height:1.1em;">
-                    <A HREF="Sub_html_DEWSP/index_DEWSP.html" style="color: #ffffff">
-                    With AI <br>
-                    predicts stocks <br>
-                    AI pick stocks <br>
-                    AI builds portfolios <br>
-                    Portfolio to builds
-
-
-                      <style type="text/css">
-                        a:hover {
-                          color: #0000FF;
-                          text-decoration: none;
-
-                        }
-                      </style>
-                    </A>
-                  </div>
-                -->
-                  <br><br><br><br><br>
-
-
-                </div>
-            <br><br>
-                <div class="motto_sub_3">
-
-                  <A HREF="https://www.reddit.com/r/StockRank/" style="color: #ffffff">
-                    UPDATED: Weekly stock rank forecasts.
-
-                    <!--DeepAllocation's approach-->
-                    <style type="text/css">
-                      a:hover {
-                        color: #0000FF;
-                        text-decoration: none;
-
-                      }
-                    </style>
-                  </A>
-                  <A HREF="https://www.reddit.com/r/StockRank/" style="color:  #F8D64F">
-                    <!--#0000ff">-->
-                    <!--more-->  Reddit community &#8250;
-                    <style type="text/css">
-                      a:hover {
-                        color: #0000FF;
-                        decoration: none;
-                      }
-                    </style> </A>
-
-<br><br>
-
-                  <A HREF="Sub_html_frontier/index_Frontier.html" style="color: #ffffff">
-                    New AI frontier in investment portfolio.
-                    <!--DeepAllocation's approach-->
-                    <style type="text/css">
-                      a:hover {
-                        color: #0000FF;
-                        text-decoration: none;
-
-                      }
-                    </style>
-                  </A>
-                  <A HREF="Sub_html_frontier/index_Frontier.html" style="color:  #F8D64F">
-                    <!--#0000ff">-->
-                    <!--more--> Details &#8250;
-                    <style type="text/css">
-                      a:hover {
-                        color: #0000FF;
-                        decoration: none;
-                      }
-                    </style>
-
-                  </A> <br>
-                </div>
-                </h1>
-                </li>
-              </ul-motto>
-            </div>
+    <!-- HERO -->
+    <header class="hero" role="banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-10 mx-auto text-center">
+            <h1 class="display-4 fw-bold">The Best Stocks <span class="d-none d-sm-inline">—</span> by AI</h1>
+            <p class="lead mt-3">AI Stock Rank forecasts to build diversified portfolios tailored to your risk profile and investing style.</p>
+            <p class="mt-4 mb-0">
+              <a class="badge-link me-2" href="https://www.reddit.com/r/StockRank/" target="_blank" rel="noopener">UPDATED: Weekly stock rank forecasts</a>
+              <span aria-hidden="true">·</span>
+              <a class="badge-link ms-2" href="https://www.reddit.com/r/StockRank/" target="_blank" rel="noopener">Reddit community &#8250;</a>
+            </p>
+            <p class="mt-2">
+              <a class="badge-link me-2" href="Sub_html_frontier/index_Frontier.html">New AI frontier in investment portfolio</a>
+              <span aria-hidden="true">·</span>
+              <a class="badge-link ms-2" href="Sub_html_frontier/index_Frontier.html">Details &#8250;</a>
+            </p>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-  </header>
+    <!-- STOCK RANKING -->
+    <section id="stockranking" class="py-5 bg-light">
+      <div class="container">
+        <div class="mb-4">
+          <div class="section-eyebrow">AI Stock Ranking</div>
+          <h2 class="h3 mt-2">Based on predicted returns across the S&amp;P 500 universe</h2>
+        </div>
+        <div class="text-center figure-shadow">
+          <img src="img/animation_Rank_230720.gif" alt="Animated AI stock ranking visualization" class="img-fluid" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
-  <!--<div class="container_sec1_color"></div>-->
-  <div class="spacing5"></div>
+    <!-- TOP-N PORTFOLIOS / PERFORMANCE -->
+    <section class="py-5" aria-labelledby="topn-title">
+      <div class="container">
+        <div class="mb-4">
+          <div class="section-eyebrow">Top‑N Ranked Portfolios</div>
+          <h2 id="topn-title" class="h3 mt-2">Pick the Top‑N ranked stocks and equally weight them</h2>
+        </div>
+        <div class="text-center figure-shadow">
+          <img src="img/DEWSP_tradeoff_230720.png" alt="Risk‑return tradeoff for AI Top‑N portfolios" class="img-fluid mb-4" loading="lazy" />
+          <div id="performance"></div>
+          <img src="img/animation_CumR_230720.gif" alt="Cumulative returns animation for AI portfolios" class="img-fluid" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
-
-  <section class="expected_returns" id="StockRanking" style="background: linear-gradient( to bottom, #fafafa,#fafafa );">
-    <div class="container-fluid row row-eq-height">
-      <div class="col-sm-12 portfolio-item">
-        <div class="motto_sec1">
-          <div class="element" style="border-left:5px solid #424242;padding-left:0.25em">
-            <div style="font-weight:600; color:#e90418;">
-              AI Stock Ranking</div>
-            <!--<div style="font-weight:600;"> DeepAllocation provides a ranking score for each asset, which
-              is a metric normalizing MONTHLY RETURN FORECASTS generated
-              by AI to a scale of 0 to 1.</div> -->
-            <div style="font-weight:500;"> Based on the predicted returns of the universe of S&P500.</div>
-
-            <br>
-            <center>
-              <div class="figure">
-                <img src="img/animation_Rank_230720.gif" alt="Stock rank based on AI predictions"></img>
-                <!--<img src="img/animation_Rank_230720.gif" style="max-width: 80%;
-                height: auto;" alt="Stock rank based on AI predictions"></img>-->
+    <!-- DISCOVER / NEWSLETTER CARD -->
+    <section id="overview" class="py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="p-4 p-md-5 border rounded-4 bg-white">
+              <div class="d-flex align-items-baseline gap-2">
+                <span class="section-eyebrow">Discover</span>
+                <h2 class="h3 m-0">S&amp;P 500 StockRankings</h2>
               </div>
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="expected_returns"  style="background: linear-gradient( to bottom, #fafafa,#fafafa );">
-    <div class="container-fluid row row-eq-height">
-      <div class="col-sm-12 portfolio-item">
-        <div class="motto_sec1">
-          <div class="element" style="border-left:5px solid #424242;padding-left:0.25em">
-            <div style="font-weight:600; color:#e90418"> Top-N Ranked Portfolios</div>
-            <!--<div style="font-weight:600;"> DeepAllocation provides a ranking score for each asset, which
-              is a metric normalizing MONTHLY RETURN FORECASTS generated
-              by AI to a scale of 0 to 1.</div> -->
-            <div style="font-weight:500;"> By picking Top-N ranked stock and equally weighting them.</div>
-
-            <br>
-            <center>
-              <div class="figure" id="Overview">
-                <img src="img/DEWSP_tradeoff_230720.png" alt="AI portfolio risk-return tradeoff"></img>
-              </div>
-                <br><br>
-                <div class="figure" id="Performance">
-                <img src="img/animation_CumR_230720.gif" alt="AI portfolio cumulative returns"></img>
-              </div>
-            </center>
-          </div>
-          <br>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--SECTION2--------------------------------------->
-  <header>
-    <div class="container_header2" id="Overview" style="padding-bottom: 40px;background: linear-gradient( to bottom, #f2f2f2,#f2f2f2 );">
-      <!--<section class="expected_returns" id="StockRanking" style="background: linear-gradient( to bottom, #f2f2f2,#f2f2f2 );">-->
-
-
-      <div class="spacing"></div>
-      <h1 class="hr-sect">
-        <div class="line_page" style="display:inline;background: linear-gradient( to bottom, #f2f2f2,#f2f2f2 );">
-          <!--<div class="txt" contenteditable="true" style="display:inline"> <b>LIVE</b> </div>-->
-          <div class="retro2" style="display:inline;text-align:left;">
-            <div class="element" style="border-left:5px solid #424242;padding-left:0.25em;">
-              <div style="display:inline;font-size: 1.5em;font-weight:200;
-                        text-align:left;">Discover</div>
-              <div style="font-weight:600;">S&P500 StockRankings.</div>
+              <hr class="mt-3" />
+              <p class="mb-0"><strong>StockRank Newsletter</strong> — get updates on ranking methodology, validation, and release notes.</p>
             </div>
           </div>
-          <div class="spacing"></div>
-
-          <!--<div class="retro_sub">StockRank NewsLetter</div>-->
-          <!--<div class="retro_sub">For Dec. 2021</div>-->
-          <div class="spacing2"></div>
-          <!--<br>-->
-          <div class="txt" contenteditable="true" style="color:#ffffff;border-radius: 5px;"> <b> StockRank NewsLetter </b> </div>
-          <!--<div class="retro_sub">Starting at $10/month</div>-->
-        </div>
-      </h1>
-    </div>
-  </header>
-
-  <!--SECTION------------------------------------------>
-  <section class="expected_returns2" id="StockRanking" style="background: linear-gradient( to bottom, #fafafa,#fafafa );">
-    <div class="container-fluid row row-eq-height">
-      <div class="col-sm-12 portfolio-item">
-        <!--style="background-color:#eaf6fd-->
-        <div class="sec3_right">
-          <!--<img src="img/DEWSP_StockRanking_DL_2021-11-30.png" alt="Cabin" class="image95" style="box-shadow: 0px 0px 2px rgba(0,0,0,0.4);"></img>-->
-          <!-- style="border: 1px solid #EAEDED">-->
-          <!--<img src="img/StockRank_1_50.PNG" alt="Stock rank based on AI predictions" class="image95" style="box-shadow: 0px 0px 2px rgba(0,0,0,0.4);"></img>--><!-- style="border: 1px solid #EAEDED">-->
-          <img src="img/animation_Rank_2308025_N503.png" alt="Stock rank based on AI predictions" class="image95" style="box-shadow: 0px 0px 2px rgba(0,0,0,0.4);"></img><!-- style="border: 1px solid #EAEDED">-->
         </div>
       </div>
-    </div><br>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="text-center" id="Contact">
-    <div class="footer-above">
+    <!-- BIG RANK IMAGE -->
+    <section class="py-5" aria-labelledby="rank-grid-title">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-10 text-center" , style="float:none;margin:auto;">
-            <div class="intro-text" style="text-align:center;">
-              <div class="skills">
-                <br>
-                Contact: deepallocation&#64;gmail.com
-              </div> <br>
-            </div>
-          </div>
+        <h2 id="rank-grid-title" class="visually-hidden">AI Rank Grid</h2>
+        <div class="text-center figure-shadow">
+          <img src="img/animation_Rank_2308025_N503.png" alt="Grid showing AI rank changes across S&amp;P 500" class="img-fluid" loading="lazy" />
         </div>
       </div>
-  </footer>
+    </section>
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-  <!-- Portfolio Modals -->
-  <div class="portfolio-modal modal fade" id="Forecast_horizon" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
+    <!-- MODAL EXAMPLE: Experimental details (kept but simplified) -->
+    <div class="modal fade" id="modalDetails" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Experimental details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Forecasting environment<br><br></h2>
-              <img src="img/Forecast_horizon.PNG" class="img-responsive img-centered" alt="">
-            </div>
+          <div class="modal-body">
+            <ul>
+              <li><strong>Universe:</strong> 72 stocks among 100 large‑cap S&amp;P 500 stocks (some excluded for short history).</li>
+              <li><strong>StockRanking score:</strong> expected returns scaled to [0, 1].</li>
+              <li><strong>Forecast origin:</strong> the date/time a prediction is made.</li>
+              <li><strong>Forecast horizon:</strong> period covered by the prediction.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
+    <!-- FOOTER -->
+    <footer id="contact" class="text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-
-            <div class="modal-body">
-              <div class="sub"> Experimental details</div>
-              <div class="bold" style="display:inline">Universe:</div> 72 stocks in 100 large-cap stocks in the S&P 500.
-              The others (e.g., Google and Nvidia), are exclueded due to the short length of historical data.<br><br>
-              <div class="bold" style="display:inline">StockRanking score:</div> expected returns scaled to the range [0, 1].<br><br>
-              <div class="bold" style="display:inline">Forecast origin:</div>the point at which we make a prediction.<br><br>
-              <div class="bold" style="display:inline">Forecast horizon:</div>the period of time we want to make predictions for.
-              <!--<img src="img/Today_preds.PNG" class="img-responsive img-centered" alt="">-->
-              <!--
-              <p style="text-align:left;">The asset universe consists of 22 diversified stocks in Standard and Poor's 500
-                index (S&P 500) that belong to 11 different GICS sectors: <br></ber>
-                <b>Energy</b>: ExxonMobil (XOM),Chevron (CVX)<br>
-                <b>Utilities</b>: Duke Energy (DUK), Consolidated Edison (ED)<br>
-                <b>Materials</b>: Sherwin-Williams (SHW), DuPont (DD) <br>
-                <b>Industrials</b>: Boeing (BA), Union Pacific (UNP)<br>
-                <b>Consumer Discretionary</b>: Amazon (AMZN), McDonald's (MCD)<br>
-                <b>Consumer Staples</b>: Coca-Cola (KO), Procter & Gamble (PG) <br>
-                <b>Healthcare</b>: United Health Group (UNH), Johnson & Johnson (JNJ) <br>
-                <b>Financials</b>: Berkshire Hathaway (BRK-B), JPMorgan Chase (JPM) <br>
-                <b>Information Technology Sector</b>: Apple (AAPL), Microsoft (MSFT)<br>
-                <b>Communication Services</b>: Facebook (FB), Alphabet (GOOG)<br>
-                <b>Real Estate</b>: American Tower (AMT), Simon Property Group (SPG) <br>
-              -->
-            </div>
-          </div>
-        </div>
+        <p class="mb-1">Contact</p>
+        <p class="fs-5"><a class="text-underline-none link-light" href="mailto:deepallocation@gmail.com">deepallocation@gmail.com</a></p>
+        <p class="small mb-0">&copy; <span id="year"></span> DeepAllocation. All rights reserved.</p>
       </div>
-    </div>
-  </div>
+    </footer>
 
-
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project Title</h2>
-              <hr class="star-primary">
-              <img src="img/cake.png" class="img-responsive img-centered" alt="">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can
-                purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project Title</h2>
-              <hr class="star-primary">
-              <img src="img/circus.png" class="img-responsive img-centered" alt="">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can
-                purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project Title</h2>
-              <hr class="star-primary">
-              <img src="img/game.png" class="img-responsive img-centered" alt="">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can
-                purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project Title</h2>
-              <hr class="star-primary">
-              <img src="img/safe.png" class="img-responsive img-centered" alt="">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can
-                purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <h2>Project Title</h2>
-              <hr class="star-primary">
-              <img src="img/submarine.png" class="img-responsive img-centered" alt="">
-              <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can
-                purchase the entire set with 146 icons for only $12!</p>
-              <ul class="list-inline item-details">
-                <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                  </strong>
-                </li>
-                <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                  </strong>
-                </li>
-                <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                  </strong>
-                </li>
-              </ul>
-              <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              Realized monthly returns of portfolios consists of top N assets<br><br>
-
-              <figure>
-                <figcaption>
-                  <div class="figcaption" style="text-align:left;">
-                    2020.08.01 - 2020.08.31
-                  </div>
-                </figcaption>
-                <img src="img/Realized_return_71.PNG" class="img-responsive img-centered" alt="">
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- jQuery -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Theme JavaScript -->
-  <script src="js/freelancer.min.js"></script>
-
-</body>
-
+    <!-- Scripts: Bootstrap + helpers -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      // smooth scroll for in-page anchors (native CSS scroll-behavior handles modern browsers)
+      document.documentElement.style.scrollBehavior = 'smooth';
+      // current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
