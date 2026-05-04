@@ -1,0 +1,85 @@
+/* style.css */
+/* Artwork detail page / gallery metadata styling */
+
+:root {
+  --art-ink: #2b1a18;
+  --art-muted: #6f5d55;
+  --art-paper: #f7f1e7;
+  --art-gold: #cdb166;
+  --art-wine: #7e1a22;
+  --art-wine-dark: #4f0f16;
+}
+
+/* Description / metadata block */
+.meta-item {
+  margin-bottom: 1.4rem;
+}
+
+.meta-label {
+  margin-bottom: 0.75rem;
+  color: var(--art-wine);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.meta-value {
+  margin-bottom:10.55rem;
+  color: var(--art-ink);
+  font-size: 1rem;
+  line-height: 10.7;
+}
+
+.meta-value:last-child {
+  margin-bottom: 0;
+}
+
+/* Optional: artwork title area */
+.art-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: var(--art-wine-dark);
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Optional: detail page layout */
+.art-detail-page {
+  background: var(--art-paper);
+  color: var(--art-ink);
+}
+
+.art-detail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Optional: make image fill a large area on detail page */
+.art-detail-hero {
+  width: 100%;
+  min-height: 80vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Optional: center text inside card */
+.text-center-card {
+  text-align: center;
+}
+
+/* Optional: simple back link */
+.back-link {
+  color: var(--art-wine);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  color: var(--art-wine-dark);
+  text-decoration: underline;
+}
