@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pope Benedict XVI | Sang Il Lee Sacred Art</title>
+    <meta name="description" content="Full artwork view of Pope Benedict XVI by Sang Il Lee." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pope Benedict XVI | Sang Il Lee Sacred Art" />
+    <meta property="og:image" content="img/artworks/Madonna.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --ink: #221a17;
+        --muted: #6e625c;
+        --paper: #fbf7ef;
+        --wine: #5c1f2d;
+        --wine-dark: #38121b;
+        --gold: #b88a44;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; min-height: 100%; }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+      .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+      .page {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: minmax(0, 72vw) minmax(320px, 28vw);
+      }
+      .art-view {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4eee3;
+        overflow: hidden;
+      }
+      .art-view a {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: zoom-in;
+      }
+      .art-view img {
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        outline: 0;
+        background: transparent;
+      }
+      .detail-panel {
+        min-height: 100vh;
+        padding: clamp(2rem, 4vw, 4rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background:
+          radial-gradient(circle at top right, rgba(184, 138, 68, .18), transparent 34%),
+          linear-gradient(180deg, #fffaf2 0%, #f4eadb 100%);
+        border-left: 1px solid rgba(92, 31, 45, .12);
+      }
+      .back-link {
+        position: fixed;
+        top: 1.35rem;
+        left: 1.35rem;
+        z-index: 10;
+        color: var(--wine-dark);
+        background: rgba(251, 247, 239, .86);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(92, 31, 45, .14);
+        border-radius: 999px;
+        padding: .62rem 1rem;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: .95rem;
+      }
+      .kicker {
+        color: var(--wine);
+        font-weight: 800;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        font-size: .78rem;
+        margin-bottom: .9rem;
+      }
+      h1 {
+        margin: 0 0 1rem;
+        color: var(--wine-dark);
+        font-size: clamp(2.8rem, 5vw, 5rem);
+        line-height: .88;
+        letter-spacing: -.035em;
+      }
+      .description {
+        margin: 0 0 2rem;
+        color: var(--muted);
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+      .meta {
+        display: grid;
+        gap: .9rem;
+        margin-bottom: 2rem;
+      }
+      .meta-item {
+        padding: 1rem 0;
+        border-top: 1px solid rgba(92, 31, 45, .14);
+      }
+      .meta-label {
+        color: var(--wine);
+        font-size: .76rem;
+        text-transform: uppercase;
+        letter-spacing: .14em;
+        font-weight: 800;
+        margin-bottom: .35rem;
+      }
+      .meta-value {
+        display: block;
+        margin-bottom: 0.75rem;
+        color: var(--ink);
+        font-weight: 600;
+        line-height: 1.65;
+      }
+
+      .meta-value:last-child {
+        margin-bottom: 0;
+      }
+      .full-link {
+        color: #fff;
+        background: var(--wine);
+        border-radius: 999px;
+        padding: .85rem 1.1rem;
+        text-decoration: none;
+        font-weight: 800;
+        display: inline-flex;
+        justify-content: center;
+        width: fit-content;
+      }
+      .full-link:hover { background: var(--wine-dark); }
+      @media (max-width: 900px) {
+        .page { display: block; }
+        .art-view,
+        .art-view a { min-height: auto; height: auto; }
+        .art-view img {
+          width: 100%;
+          height: auto;
+          min-height: 72vh;
+          object-fit: contain;
+        }
+        .detail-panel {
+          min-height: auto;
+          border-left: 0;
+          border-top: 1px solid rgba(92, 31, 45, .12);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="back-link" href="index.html#gallery">Back to Gallery</a>
+
+    <main class="page">
+      <section class="art-view" aria-label="Large artwork image">
+        <a href="img/artworks/Madonna.jpg" target="_blank" rel="noopener" aria-label="Open full-size image in a new tab">
+          <img src="img/artworks/Madonna.jpg" alt="Portrait painting of Pope Benedict XVI" />
+        </a>
+      </section>
+
+      <aside class="detail-panel">
+        <!-- <div class="kicker">Sacred Portrait</div> -->
+        <h1 class="serif">Woebegone Madonna</h1>
+        <!-- <p class="description">A contemplative sacred portrait in warm gold, ivory, and crimson tones.</p> -->
+        <div class="meta">
+          <div class="meta-item">
+            <div class="meta-label">Description</div>
+            <div class="meta-value">Inspired by The Woebegone Madonna, a fresco attributed to Lippo Memmi from the old basilica in the crypt of St. Peter’s.</div>
+            <div class="meta-value">Oil over modeling paste on canvas.</div>
+            <div class="meta-value">90.9 by 72.7cm.</div>
+            <div class="meta-value">Painted 2025.</div>
+          </div>
+          <!--
+          <div class="meta-item">
+            <div class="meta-label">Presentation</div>
+            <div class="meta-value">Full image view</div>
+          </div>
+        -->
+
+        </div>
+        <!--  <a class="full-link" href="img/artworks/Madonna.jpg" target="_blank" rel="noopener">Open Image</a> -->
+      </aside>
+    </main>
+  </body>
+</html>
