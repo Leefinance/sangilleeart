@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <rect width="900" height="1200" fill="#fbf2e8"/>
+  <circle cx="720" cy="210" r="110" fill="#c85a3c" opacity="0.24"/>
+  <path d="M80 850 C220 600, 330 780, 455 520 S705 290, 820 410" fill="none" stroke="#4a1f1f" stroke-width="32" stroke-linecap="round" opacity="0.82"/>
+  <path d="M110 940 C300 790, 430 990, 790 720" fill="none" stroke="#c85a3c" stroke-width="18" stroke-linecap="round" opacity="0.75"/>
+  <rect x="125" y="120" width="250" height="330" rx="22" fill="#4a1f1f" opacity="0.08"/>
+  <rect x="185" y="175" width="250" height="330" rx="22" fill="#c85a3c" opacity="0.10"/>
+  <text x="90" y="1080" font-family="serif" font-size="56" fill="#4a1f1f" opacity="0.9">붉은 계절</text>
+</svg>
